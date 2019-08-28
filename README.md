@@ -9,7 +9,7 @@ We need to install `npx` command line tool first (details [is here](https://ioni
 
 ```
 npm install -g @capacitor/cli
-``` 
+```
 
 Install dependencies of project:
 
@@ -23,15 +23,22 @@ Compiles and minify for production:
 npm run build
 ```
 
+## Building application
+
+### Android APK
+
+```
+npx cap add android
+```
+
 Copy compiled files to NPX application build roots:
 
 ```
 npm run copy
 ```
 
-## Building application
+Build then
 
-### Android APK
 ```
 cd android
 ./gradlew build
